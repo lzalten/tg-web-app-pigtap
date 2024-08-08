@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Центрирование всего содержимого по вертикали */
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+}
+
+.greeting {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+
+.score {
+  font-size: 18px;
+  margin: 0;
+  color: white;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.pig-image {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 50px; /* Пространство между свинкой и кнопкой */
+}
+
+.slider-button {
+  width: 300px;
+  padding: 20px 20px;
+  background-color: #8a2be2;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+  user-select: none;
+  margin-bottom: 10px; /* Кнопка почти у самого низа */
+}
+
+.slider-button:active {
+  transform: scale(0.95);
+}
+
+.button-content {
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  text-decoration: none;
+  color: gold;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.progress-bars {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.progress-bar {
+  width: 40px;
+  height: 4px;
+  background-color: lightgray;
+  border-radius: 2px;
+  transition: background-color 0.5s ease;
+}
+
+.progress-bar.active {
+  background-color: white;
+}
